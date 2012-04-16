@@ -94,6 +94,29 @@
 
 #atarist #desktop {
   background-color: #00E000;
-  /* border: 2px solid black; /* SWITCH: wrapper border */
-  height: 380px; /* <-- Adjust this */
+  /* border: 2px solid black; /* SWITCH: desktop border */
+  height: 380px;
 }
+
+/*
+ * 06 - Icons
+ */
+ 
+.icon {
+  background-color: #00E000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 64px;
+  width: 64px;
+}
+ 
+.icon_diskette { background-image: url('../img/icons/diskette.png'); }
+.icon_floppy_disk_a { background-image: url('../img/icons/floppy_disk_a.png'); }
+.icon_floppy_disk_b { background-image: url('../img/icons/floppy_disk_b.png'); }
+.icon_floppy_disk_c { background-image: url('../img/icons/floppy_disk_c.png'); }
+.icon_folder { background-image: url('../img/icons/folder.png'); }
+.icon_printer { background-image: url('../img/icons/printer.png'); }
+.icon_program { background-image: url('../img/icons/program.png'); }
+.icon_text_file { background-image: url('../img/icons/text-file.png'); }
+.icon_tos_file { background-image: url('../img/icons/tos_file.png'); }
+.icon_trash { background-image: url('../img/icons/trash.png'); }
