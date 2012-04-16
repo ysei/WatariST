@@ -1,0 +1,93 @@
+/*
+ * Table of contents:
+ *
+ * 00 - Notes
+ * 01 - Color palette
+ * 02 - Fonts
+ * 03 - Atari ST wrapper and generic classes
+ * 04 - Menu bar
+ * 05 - Desktop
+ * 06 - Icons
+ * 07 - Windows
+ * 08 - Windows title bar
+ * 09 - Windows content
+ * 10 - Windows scrollbars
+ * 11 - Dialogs
+ */
+ 
+/*
+ * 00 - Notes:
+ *
+ * All styles are prefixed with "#atarist" to use this stylesheet along with others.
+ */
+  
+/*
+ * 01 - Color palette:
+ *
+ * Code    | Name       | Usage
+ * -------   ----------   -----
+ * #00E000 | Green      | Desktop background
+ * #E0E0E0 | Light grey | Menu bar, menu items, windows background, icons labels
+ */
+ 
+/*
+ * 02 - Fonts:
+ *
+ * Kroah - Generic Atari ST font
+ */
+
+@font-face {
+  font-family: 'Kroah';
+  src: url('../fonts/kroah.ttf') format('truetype');
+}
+
+/*
+ * 03 - Atari ST wrapper and generic classes
+ */
+
+#atarist {
+  /* border: 2px solid black; /* SWITCH: wrapper border */
+  cursor: url('../cursors/atarist.cur'), default;
+  font-family: 'Kroah';
+  height: 400px;
+  overflow: hidden;
+  width: 640px;
+}
+ 
+/*
+ * 04 - Menu bar
+ */
+ 
+#atarist #menu {
+  background-color: #E0E0E0;
+  border-bottom: 2px solid black;
+  height: 20px;
+  padding-left: 34px;
+}
+
+#atarist #menu > ul {
+  display: inline;
+}
+
+#atarist #menu li {
+  float: left;
+  list-style: none;
+  margin-top: 2px;
+  padding: 0 14px 2px 14px;
+  text-transform: capitalize;
+}
+
+#atarist #menu li:hover {
+  background-color: black;
+  color: #E0E0E0;
+}
+
+/*
+ * 05 - Desktop
+ */
+
+#atarist #desktop {
+  background-color: #00E000;
+  /* border: 2px solid black; /* SWITCH: wrapper border */
+  height: 380px; /* <-- Adjust this */
+}
