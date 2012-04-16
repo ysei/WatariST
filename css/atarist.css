@@ -33,12 +33,18 @@
 /*
  * 02 - Fonts:
  *
- * Kroah - Generic Atari ST font
+ * Atari ST Regular - Generic Atari ST font
  */
 
 @font-face {
-  font-family: 'Kroah';
-  src: url('../fonts/kroah.ttf') format('truetype');
+  font-family: 'AtariSTRegular';
+  src: url('../fonts/atarist_regular.eot');
+  src: url('../fonts/atarist_regular.eot?#iefix')  format('embedded-opentype'),
+         url('../fonts/atarist_regular.woff') format('woff'),
+         url('../fonts/atarist_regular.ttf') format('truetype'),
+         url('../fonts/atarist_regular.svg#AtariSTRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*
@@ -48,7 +54,7 @@
 #atarist {
   /* border: 2px solid black; /* SWITCH: wrapper border */
   cursor: url('../cursors/atarist.cur'), default;
-  font-family: 'Kroah';
+  font-family: 'AtariSTRegular';
   height: 400px;
   overflow: hidden;
   width: 640px;
